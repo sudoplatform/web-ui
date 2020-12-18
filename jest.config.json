@@ -1,0 +1,13 @@
+{
+  "testEnvironment": "jsdom",
+  "testMatch": ["<rootDir>/src/**/*.spec.{ts,tsx}"],
+  "setupFilesAfterEnv": ["<rootDir>/tests/setup-tests.ts"],
+  "clearMocks": true,
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}",
+    "!**/src/**/*.spec.*",
+    "!**/src/**/*.stories.*"
+  ],
+  "coverageDirectory": "<rootDir>/build/coverage",
+  "coverageReporters": ["text", "text-summary"]
+}

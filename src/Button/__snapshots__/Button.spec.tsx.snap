@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render 1`] = `
+<Styled(Button)
+  type="default"
+>
+  TEST
+</Styled(Button)>
+`;
