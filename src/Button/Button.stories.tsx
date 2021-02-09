@@ -26,3 +26,4 @@ storiesOf('Button', module)
     <Button onClick={() => alert('Clicked')}>Click Me</Button>
   ))
   .add('loading', () => <Button loading={true}>Loading</Button>)
+  .add('disabled', () => <Button disabled={true}>Disabled</Button>)

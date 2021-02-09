@@ -113,7 +113,7 @@ const StyledButton = styled(AntdButton)`
 
 interface Props {
   className?: string
-  kind?: 'primary' | 'default' | 'link'
+  kind?: 'primary' | 'default' | 'link' | 'ghost'
   danger?: boolean
   loading?: boolean
   disabled?: boolean
@@ -122,7 +122,14 @@ interface Props {
 }
 
 export const Button: React.FC<Props> = (props) => {
-  const { kind, type, ...rest } = props
+  const { kind, type, disabled, ...rest } = props
 
-  return <StyledButton htmlType={type} type={kind ?? 'default'} {...rest} />
+  return (
+    <StyledButton
+      htmlType={type}
+      type={disabled ? 'ghost' : kind ?? 'default'}
+      disabled={disabled}
+      {...rest}
+    />
+  )
 }
