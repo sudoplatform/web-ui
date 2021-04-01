@@ -17,10 +17,14 @@ const StyledSvg = styled.svg`
   }
 `
 
-export const Spinner: React.FC = () => {
+interface Props {
+  className?: string
+}
+
+export const Spinner: React.FC<Props> = ({ className }) => {
   return (
     <StyledSvg
-      className="spinner"
+      className={`spinner ${className ?? ''}`}
       id="spinner"
       viewBox="0 0 1024 1024"
       focusable="false"

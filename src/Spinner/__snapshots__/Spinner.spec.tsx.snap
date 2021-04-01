@@ -3,7 +3,7 @@
 exports[`Spinner should render 1`] = `
 <styled.svg
   aria-hidden="true"
-  className="spinner"
+  className="spinner "
   data-icon="loading"
   fill="currentColor"
   focusable="false"
