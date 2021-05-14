@@ -1,5 +1,3 @@
-import 'antd/dist/antd.min.css'
-
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 

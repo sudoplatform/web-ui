@@ -15,6 +15,6 @@
     "strict": true,
     "target": "ES2015"
   },
-  "include": ["src/**/*", "tests/**/*"],
+  "include": ["src/**/*", "tests/**/*", "typings"],
   "exclude": ["node_modules", "lib"]
 }
