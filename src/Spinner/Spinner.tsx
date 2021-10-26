@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import styled from 'styled-components'
 
 const StyledSvg = styled.svg`
-  &.spinner::before,
-  &.spinner {
-    display: inline-block;
-    margin-right: 4px;
-    animation: loadingCircle 1s infinite linear;
-  }
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 16px;
+
+  animation: loadingCircle 1s infinite linear;
 
   @keyframes loadingCircle {
     100% {
-      -webkit-transform: rotate(360deg);
       transform: rotate(360deg);
     }
   }
@@ -19,18 +18,17 @@ const StyledSvg = styled.svg`
 
 interface Props {
   className?: string
+  style?: CSSProperties
 }
 
-export const Spinner: React.FC<Props> = ({ className }) => {
+export const Spinner: React.FC<Props> = ({ className, style }) => {
   return (
     <StyledSvg
-      className={`spinner ${className ?? ''}`}
-      id="spinner"
+      style={style}
+      className={className}
       viewBox="0 0 1024 1024"
       focusable="false"
       data-icon="loading"
-      width="1em"
-      height="1em"
       fill="currentColor"
       aria-hidden="true"
     >

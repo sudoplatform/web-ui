@@ -58,14 +58,16 @@ const Container = styled.div`
  * space after the last row.
  */
 const Stack = styled.div<Props>`
-  width: calc(100% + ${getSpacing});
+  // The extra 1px (below) fixes a Safari issue where it doesn't allow enough space for text.
+  width: calc(100% + ${getSpacing} + 1px);
   display: flex;
   flex-direction: row;
   align-items: ${getVerticalAlign};
   justify-content: ${getHorizontalAlign};
   flex-wrap: wrap;
 
-  > * {
+  && > * {
+    display: block;
     margin-top: 0;
     margin-left: 0;
     margin-right: ${getSpacing};

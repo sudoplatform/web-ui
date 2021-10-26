@@ -43,6 +43,7 @@ const StyledButton = styled(AntdButton)`
 
   &.ant-btn-link {
     color: ${({ theme }) => theme.colors.primary};
+    border: 0;
 
     :active,
     :not([disabled]):hover,

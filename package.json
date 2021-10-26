@@ -14,7 +14,7 @@
     "lib"
   ],
   "scripts": {
-    "start": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "build": "yarn build:js && yarn build:ts",
     "build:js": "babel src --out-dir lib --extensions '.ts,.tsx' --ignore '**/*.spec.ts,**/*.spec.tsx,**/*.stories.tsx'",
     "build:ts": "tsc --project tsconfig.declarations.json",
@@ -24,8 +24,14 @@
     "verify": "yarn audit && yarn lint && yarn typecheck && yarn test --coverage"
   },
   "resolutions": {
-    "postcss": "^8.2.10",
-    "trim": "^1.0.1"
+    "@storybook/cli/**/ws": ">=6.2.2",
+    "@storybook/cli/**/set-value": ">=4.0.1",
+    "@storybook/cli/**/trim": ">=0.0.3",
+    "@storybook/react/**/@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
+    "@storybook/react/**/browserslist": ">=4.16.5",
+    "@storybook/react/**/glob-parent": ">=5.1.2",
+    "@storybook/react/**/immer": "^9.0.6",
+    "@storybook/react/**/set-value": ">=4.0.1"
   },
   "peerDependencies": {
     "antd": "^4.12.3",
@@ -42,9 +48,8 @@
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/cli": "^6.1.10",
-    "@storybook/react": "^6.1.10",
-    "@types/classnames": "^2.2.11",
+    "@storybook/cli": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@types/color": "^3.0.1",
     "@types/enzyme": "^3.10.8",
     "@types/enzyme-adapter-react-16": "^1.0.6",
@@ -66,7 +71,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "import-sort-style-module": "^6.0.0",
-    "jest": "^26.6.3",
+    "jest": "^27.3.1",
     "jest-styled-components": "^7.0.3",
     "postcss": "8.2.10",
     "prettier": "^2.2.0",

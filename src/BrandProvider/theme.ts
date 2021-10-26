@@ -1,10 +1,12 @@
 import { DefaultTheme } from 'styled-components'
 
+// Obnoxious colors that will help make it easier to visually
+// identify when they aren't being used
 const defaultColors = {
-  primary: '#3770f6',
-  success: '#1ccd82',
-  error: '#ff403d',
-  interactive: '#3770f6',
+  primary: 'chocolate',
+  success: 'chartreuse',
+  error: 'fuchsia',
+  interactive: 'yellow',
 }
 
 declare module 'styled-components' {

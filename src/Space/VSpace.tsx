@@ -39,7 +39,8 @@ const Stack = styled.div<Props>`
     align-items: ${getAlign(props)};
   `}
 
-  > * {
+  && > * {
+    display: block;
     margin: 0;
     margin-bottom: ${getBottomMargin};
   }
