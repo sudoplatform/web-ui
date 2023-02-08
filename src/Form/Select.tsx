@@ -1,20 +1,12 @@
 import { Select as AntdSelect } from 'antd'
-import { SelectProps, SelectValue } from 'antd/lib/select'
+import { SelectProps, SelectValue } from 'antd/es/select'
 import Color from 'color'
 import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 import { inputActiveCss, inputCss } from './css'
 
-/** Wasn't able to get styledcomponents working for AntdSelect.Option */
-const OptionsStyle = createGlobalStyle`
-  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
-    background-color: ${({ theme }) =>
-      Color(theme.colors.primary).alpha(0.1).string()};
-  }
-`
-
-const StyledSelect = styled(AntdSelect)`
+const StyledSelect = styled(AntdSelect)<SelectProps<SelectValue>>`
   &.ant-select:not(.ant-select-customize-input) {
     .ant-select-selector {
       ${inputCss}
@@ -30,15 +22,15 @@ const StyledSelect = styled(AntdSelect)`
       ${inputActiveCss}
     }
   }
+
+  // 'Option' styling
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: ${({ theme }) =>
+      Color(theme.colors.primary).alpha(0.1).string()};
+  }
 `
 
-export const Select: React.FC<SelectProps<SelectValue>> = (props) => {
-  return (
-    <>
-      <OptionsStyle />
-      <StyledSelect {...props} />
-    </>
-  )
-}
-
+// Export type-casted function reference instead of defining React.FC with
+// child `StyledSelect` to evade `no overload matches call` error.
+export const Select = StyledSelect as React.FC<SelectProps<SelectValue>>
 export const Option = AntdSelect.Option

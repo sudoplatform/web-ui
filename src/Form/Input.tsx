@@ -1,5 +1,4 @@
-import { Input as AntdInput } from 'antd'
-import { InputProps } from 'antd/lib/input'
+import { Input as AntdInput, InputProps } from 'antd'
 import React from 'react'
 import styled from 'styled-components'
 

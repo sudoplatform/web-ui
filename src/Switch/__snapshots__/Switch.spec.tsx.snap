@@ -1,3 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Switch should render 1`] = `<Styled(Switch) />`;
+exports[`Switch should render 1`] = `
+.c0.ant-switch-checked {
+  background-color: chocolate;
+}
+
+.c0 .ant-click-animating-node {
+  visibility: hidden;
+}
+
+<button
+  aria-checked={false}
+  className="ant-switch c0"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="switch"
+  type="button"
+>
+  <div
+    className="ant-switch-handle"
+  />
+  <span
+    className="ant-switch-inner"
+  />
+</button>
+`;

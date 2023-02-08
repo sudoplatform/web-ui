@@ -1,5 +1,4 @@
-import { Form as AntdForm } from 'antd'
-import { FormItemProps } from 'antd/lib/form'
+import { Form as AntdForm, FormItemProps } from 'antd'
 import React from 'react'
 import styled from 'styled-components'
 

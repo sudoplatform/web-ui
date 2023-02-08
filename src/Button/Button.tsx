@@ -119,6 +119,7 @@ interface Props {
   loading?: boolean
   disabled?: boolean
   type?: 'submit' | 'button' | 'reset'
+  children?: React.ReactNode
   onClick?: React.MouseEventHandler<HTMLElement>
 }
 

@@ -6,9 +6,9 @@ import { toast } from './toast'
 
 storiesOf('Toast', module).add('default', () => (
   <div>
-    <Button onClick={() => toast.info('Info')}>Info</Button>
-    <Button onClick={() => toast.warn('Warn')}>Warn</Button>
-    <Button onClick={() => toast.success('Success')}>Success</Button>
-    <Button onClick={() => toast.error('Success')}>Error</Button>
+    <Button onClick={() => void toast.info('Info')}>Info</Button>
+    <Button onClick={() => void toast.warn('Warn')}>Warn</Button>
+    <Button onClick={() => void toast.success('Success')}>Success</Button>
+    <Button onClick={() => void toast.error('Success')}>Error</Button>
   </div>
 ))

@@ -53,6 +53,7 @@ interface Props {
   spacing?: 'small' | 'medium' | 'large'
   className?: string
   style?: CSSProperties
+  children?: React.ReactNode
 }
 
 /**

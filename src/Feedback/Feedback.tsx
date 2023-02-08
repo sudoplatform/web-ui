@@ -31,6 +31,7 @@ const StyledAlert = styled(Alert)`
 
 interface Props {
   type?: 'success' | 'info' | 'error' | 'warning'
+  children?: React.ReactNode
 }
 
 export const Feedback: React.FC<Props> = (props) => {

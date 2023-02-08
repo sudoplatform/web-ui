@@ -1,10 +1,8 @@
-import { Form as AntdForm } from 'antd'
-import { FormProps } from 'antd/lib/form'
-import { useForm as AntdUseForm } from 'antd/lib/form/Form'
+import { Form as AntdForm, FormProps } from 'antd'
 import React from 'react'
 import styled from 'styled-components'
 
-const StyledForm = styled(AntdForm)`
+const StyledForm = styled(AntdForm)<FormProps>`
   width: 100%;
 
   // Prevent hspace from messing with margins
@@ -46,8 +44,11 @@ const StyledForm = styled(AntdForm)`
   }
 `
 
-export const Form: React.FC<FormProps> = (props) => {
-  return <StyledForm layout={props.layout ?? 'vertical'} {...props} />
+StyledForm.defaultProps = {
+  layout: 'vertical',
 }
 
-export const useForm = AntdUseForm
+// Export type-casted function reference instead of defining React.FC with
+// child `StyledForm` to evade `no overload matches call` error.
+export const Form = StyledForm as React.FC<FormProps>
+export { useForm } from 'antd/es/form/Form'

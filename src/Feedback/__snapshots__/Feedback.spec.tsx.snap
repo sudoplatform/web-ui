@@ -1,7 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Feedback should render 1`] = `
-<Styled(Alert)
-  message="TEST"
-/>
+.c0 {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.c0.ant-alert-success {
+  border-color: rgba(127,255,0,0.5);
+  background: rgba(127,255,0,0.1);
+}
+
+.c0.ant-alert-info {
+  border-color: rgba(210,105,30,0.5);
+  background: rgba(210,105,30,0.1);
+}
+
+.c0.ant-alert-error {
+  border-color: rgba(255,0,255,0.5);
+  background: rgba(255,0,255,0.1);
+}
+
+<div
+  className="ant-alert ant-alert-info ant-alert-no-icon c0"
+  data-show={true}
+  role="alert"
+  style={{}}
+>
+  <div
+    className="ant-alert-content"
+  >
+    <div
+      className="ant-alert-message"
+    >
+      TEST
+    </div>
+  </div>
+</div>
 `;

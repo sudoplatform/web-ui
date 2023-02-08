@@ -1,5 +1,5 @@
 import { Input as AntdInput } from 'antd'
-import { PasswordProps } from 'antd/lib/input'
+import { PasswordProps } from 'antd/es/input'
 import React from 'react'
 import styled from 'styled-components'
 

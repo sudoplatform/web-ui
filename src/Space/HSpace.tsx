@@ -12,6 +12,7 @@ interface Props {
   verticalAlign?: 'top' | 'center' | 'bottom'
   spacing?: 'small' | 'medium' | 'large'
   stretch?: 'all' | 'first' | 'last' | number
+  children?: React.ReactNode
 }
 
 function getHorizontalAlign(props: Props): string {

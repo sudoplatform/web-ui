@@ -5,6 +5,7 @@ import { BrandColors, defaultTheme } from './theme'
 
 interface Props {
   colors?: BrandColors
+  children?: React.ReactNode
 }
 
 export const BrandProvider: React.FC<Props> = (props) => {

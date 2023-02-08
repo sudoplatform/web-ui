@@ -1,11 +1,17 @@
-import { shallow } from 'enzyme'
 import React from 'react'
+import { create } from 'react-test-renderer'
 
+import { BrandProvider } from '../BrandProvider'
 import { Card } from './Card'
 
 describe('Card', () => {
   it('should render', () => {
-    const wrapper = shallow(<Card>TEST</Card>)
-    expect(wrapper).toMatchSnapshot()
+    const wrapper = create(
+      <BrandProvider>
+        <Card>TEST</Card>
+      </BrandProvider>,
+    )
+    const serialized = wrapper.toJSON()
+    expect(serialized).toMatchSnapshot()
   })
 })

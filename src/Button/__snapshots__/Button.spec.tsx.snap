@@ -1,9 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button should render 1`] = `
-<Styled(Button)
-  type="default"
+.c0.ant-btn-primary {
+  border-radius: 4px;
+  border-width: 0.5px;
+  background-color: chocolate;
+  border-color: chocolate;
+  color: #fff;
+}
+
+.c0.ant-btn-primary:active,
+.c0.ant-btn-primary:hover,
+.c0.ant-btn-primary:focus {
+  background-color: chocolate;
+  border-color: chocolate;
+  box-shadow: 0px 0px 5px 2px rgba(210,105,30,0.4);
+  color: #fff;
+}
+
+.c0.ant-btn-default {
+  border-radius: 4px;
+  border-width: 0.5px;
+  background-color: #fff;
+  border-color: chocolate;
+  color: chocolate;
+}
+
+.c0.ant-btn-default:active,
+.c0.ant-btn-default:hover,
+.c0.ant-btn-default:focus {
+  background-color: #fff;
+  border-color: #69350F;
+  box-shadow: 0px 0px 5px 2px rgba(210,105,30,0.4);
+  color: #9D4F17;
+}
+
+.c0.ant-btn-link {
+  color: chocolate;
+  border: 0;
+}
+
+.c0.ant-btn-link:active,
+.c0.ant-btn-link:not([disabled]):hover,
+.c0.ant-btn-link:focus {
+  color: #9D4F17;
+}
+
+.c0.ant-btn-link:active > span,
+.c0.ant-btn-link:not([disabled]):hover > span,
+.c0.ant-btn-link:focus > span {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0.ant-btn-default.ant-btn-dangerous {
+  background-color: #fff;
+  border-color: fuchsia;
+  color: fuchsia;
+}
+
+.c0.ant-btn-default.ant-btn-dangerous:active,
+.c0.ant-btn-default.ant-btn-dangerous:hover,
+.c0.ant-btn-default.ant-btn-dangerous:focus {
+  background-color: #fff;
+  border-color: #80007F;
+  box-shadow: 0px 0px 5px 2px rgba(255,0,255,0.4);
+  color: #BF00BF;
+}
+
+.c0.ant-btn-primary.ant-btn-dangerous {
+  background-color: fuchsia;
+  border-color: fuchsia;
+  color: #fff;
+}
+
+.c0.ant-btn-primary.ant-btn-dangerous:active,
+.c0.ant-btn-primary.ant-btn-dangerous:hover,
+.c0.ant-btn-primary.ant-btn-dangerous:focus {
+  background-color: fuchsia;
+  border-color: fuchsia;
+  box-shadow: 0px 0px 5px 2px rgba(255,0,255,0.4);
+  color: #fff;
+}
+
+.c0.ant-btn-link.ant-btn-dangerous {
+  color: fuchsia;
+}
+
+.c0.ant-btn-link.ant-btn-dangerous:active,
+.c0.ant-btn-link.ant-btn-dangerous:not([disabled]):hover,
+.c0.ant-btn-link.ant-btn-dangerous:focus {
+  color: #BF00BF;
+}
+
+.c0.ant-btn-link.ant-btn-dangerous:active > span,
+.c0.ant-btn-link.ant-btn-dangerous:not([disabled]):hover > span,
+.c0.ant-btn-link.ant-btn-dangerous:focus > span {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 [ant-click-animating-without-extra-node]:after {
+  -webkit-animation: none !important;
+  animation: none !important;
+}
+
+.c0.ant-btn-loading-icon {
+  margin-right: 8px;
+}
+
+<button
+  className="ant-btn ant-btn-default c0"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
 >
-  TEST
-</Styled(Button)>
+  <span>
+    TEST
+  </span>
+</button>
 `;

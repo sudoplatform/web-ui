@@ -16,6 +16,7 @@ const Title = styled.h2`
 interface Props {
   title?: React.ReactNode
   className?: string
+  children?: React.ReactNode
 }
 
 export const Card: React.FC<Props> = (props) => (
