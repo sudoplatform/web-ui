@@ -51,4 +51,4 @@ StyledForm.defaultProps = {
 // Export type-casted function reference instead of defining React.FC with
 // child `StyledForm` to evade `no overload matches call` error.
 export const Form = StyledForm as React.FC<FormProps>
-export { useForm } from 'antd/es/form/Form'
+export { useForm } from 'antd/lib/form/Form'

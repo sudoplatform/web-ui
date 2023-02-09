@@ -1,5 +1,5 @@
 import { Select as AntdSelect } from 'antd'
-import { SelectProps, SelectValue } from 'antd/es/select'
+import { SelectProps, SelectValue } from 'antd/lib/select'
 import Color from 'color'
 import React from 'react'
 import styled from 'styled-components'

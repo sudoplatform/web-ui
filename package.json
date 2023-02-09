@@ -40,12 +40,9 @@
     "styled-components/react-is": ">=16.8.0"
   },
   "dependencies": {
-    "browserslist": ">=4.21.4",
     "classnames": "^2.2.6",
     "color": "^4.2.3",
-    "immer": "^9.0.16",
-    "uuid": "^9.0.0",
-    "ws": ">=8.11.0"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -98,7 +95,7 @@
     }
   },
   "auditSuppressions": {
-    "1089395": "1676151741",
-    "1089394": "1676151741"
+    "1089395": 1676151741,
+    "1089394": 1676151741
   }
 }
